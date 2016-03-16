@@ -25,6 +25,7 @@ p {
 
 #container {
   width: 72.91667%;
+  max-width: 80em;
   margin: auto; }
 
 #main-nav {
@@ -109,7 +110,7 @@ img {
 @media only screen and (min-width: 30em) {
   .wrapper {
     width: 95%;
-    max-width: 65em; }
+    max-width: 80em; }
   .column-1 {
     width: 8.33333%; }
   .column-2 {
