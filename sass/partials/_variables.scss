@@ -1,8 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
-
-$color-body: #DBDBDB;
-$color-footer: #BAAEA6;
-
+// Various Colors
 $color-white: #FFFFFF;
 $color-red: #FF0000;
 $color-green: #00FF00;
@@ -13,16 +9,27 @@ $color-gray: #666666;
 $color-black: #000000;
 $color-nav-hover: #FFA569;
 
-$color-header: #F0F0F0;
+// Layout Colors
+$color-body: #DBDBDB;
+$color-footer: #BAAEA6;
+$color-header: #2b2b2b;
 
+// Font Families
 $font-stack: Arial, Helvetica, Verdana, Sans-serif;
-
 $font-nav: 'Arial', Serif;
 
-// grid variables
+// grid Variables
 $grid-columns: 12;
 $grid-max-width: 80em;
+
+// Layout Variables
+$container-width: 100%;
+
+// Layout Variables Large
+$container-width-large: 700px / 960px * 100%;
+$container-max-width-large: 80em;
 
 // breakpoints
 $breakpoint-small: "only screen and (min-widtj: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
+$breakpoint-large: "only screen and (min-width: 64em)";

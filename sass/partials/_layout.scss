@@ -24,9 +24,10 @@ footer {
     color: $color-white;
   }
 
-#container {
-  width: 700px / 960px * 100%;
-  max-width: 80em;
+#container,
+#header,
+#footer {
+  width: $container-width;
   margin: auto;
 }
 
@@ -87,4 +88,14 @@ footer {
 
 .align-center {
   text-align: center;
+}
+
+@media #{$breakpoint-large} {
+  #container,
+  #header,
+  #footer {
+    width: $container-width-large;
+    max-width: $container-max-width-large;
+    margin: auto;
+  }
 }

@@ -1,11 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 body {
   background: #DBDBDB;
   margin: 0;
   padding: 0; }
 
 header {
-  background: #F0F0F0; }
+  background: #2b2b2b; }
 
 main {
   background: #FFFFFF; }
@@ -23,9 +22,10 @@ footer {
 p {
   color: #FFFFFF; }
 
-#container {
-  width: 72.91667%;
-  max-width: 80em;
+#container,
+#header,
+#footer {
+  width: 100%;
   margin: auto; }
 
 #main-nav {
@@ -70,6 +70,14 @@ p {
 
 .align-center {
   text-align: center; }
+
+@media only screen and (min-width: 64em) {
+  #container,
+  #header,
+  #footer {
+    width: 72.91667%;
+    max-width: 80em;
+    margin: auto; } }
 
 .wrapper,
 .row {
