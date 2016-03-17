@@ -28,48 +28,40 @@ p {
   width: 100%;
   margin: auto; }
 
-#main-nav {
-  height: 45px; }
-  #main-nav ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style-type: none; }
-  #main-nav li {
-    display: inline-block; }
-  #main-nav a {
-    padding: 13px;
-    display: block;
-    color: #FF9D00;
-    font-family: "Arial", Serif;
-    font-weight: bold;
-    text-decoration: none; }
-    #main-nav a:after {
-      content: '';
-      display: block;
-      margin: auto;
-      height: 3px;
-      width: 0px;
-      background: transparent;
-      transition: width .5s ease, background-color .5s ease; }
-    #main-nav a:hover:after {
-      width: 100%;
-      border-bottom: 3px solid #FFA569; }
-  #main-nav .nav-left {
-    float: left;
-    text-align: left;
-    width: 33.33333%; }
-  #main-nav .nav-center {
-    float: left;
-    text-align: center;
-    width: 33.33333%; }
-  #main-nav .nav-right {
-    float: left;
-    text-align: right;
-    width: 33.33333%; }
+#main-nav ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
 
-.align-center {
-  text-align: center; }
+#main-nav ul.topnav li {
+  float: left; }
+
+#main-nav ul.topnav li a {
+  display: inline-block;
+  color: #FF9D00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px; }
+  #main-nav ul.topnav li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
+  #main-nav ul.topnav li a:hover:after {
+    width: 100%;
+    border-bottom: 3px solid #FFA569; }
+
+#main-nav ul.topnav li a:hover {
+  background-color: #111; }
+
+#main-nav ul.topnav li.icon {
+  display: none; }
 
 @media only screen and (min-width: 64em) {
   #container,
@@ -78,6 +70,29 @@ p {
     width: 72.91667%;
     max-width: 80em;
     margin: auto; } }
+
+@media only screen and (max-width: 64em) {
+  #main-nav ul.topnav li:not(:first-child) {
+    display: none; }
+  #main-nav ul.topnav li.icon {
+    float: right;
+    display: inline-block; }
+  #main-nav ul.topnav.responsive {
+    position: relative; }
+  #main-nav ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  #main-nav ul.topnav.responsive li {
+    float: none;
+    display: inline; }
+  #main-nav ul.topnav.responsive li a {
+    display: block;
+    text-align: left; }
+  #main-nav ul.topnav li a:after {
+    display: none; }
+  #main-nav ul.topnav li a:hover:after {
+    display: none; } }
 
 .wrapper,
 .row {
